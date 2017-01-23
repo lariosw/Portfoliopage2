@@ -9,6 +9,8 @@
 // 'test/spec/**/*.js'
 
 module.exports = function (grunt) {
+  //build control
+  grunt.loadNpmTasks('grunt-build-control');
 
   // Time how long tasks take. Can help when optimizing build times
   require('time-grunt')(grunt);
@@ -29,6 +31,21 @@ module.exports = function (grunt) {
 
     // Project settings
     config: config,
+
+    buildcontrol: {
+      options: {
+        dir: 'dist',
+        commit: true,
+        push: true,
+        message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+      },
+      pages: {
+        options: {
+          remote: 'https://github.com/lariosw/Portfoliopage2.git',
+          branch: 'gh-pages'
+        }
+      }
+    },
 
     // Watches files for changes and runs tasks based on the changed files
     watch: {
