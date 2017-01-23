@@ -44,6 +44,12 @@ module.exports = function (grunt) {
           remote: 'https://github.com/lariosw/Portfoliopage2.git',
           branch: 'gh-pages'
         }
+      },
+      profile: {
+        options: {
+          remote: 'https://github.com/lariosw/lariosw.github.io.git',
+          branch: 'master'
+        }
       }
     },
 
