@@ -1,0 +1,292 @@
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+@import "mixins";
+@import "bootstrapOverwrites";
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 3px  #e5e5e5;
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: black;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+    .lead {
+      font-size: 30px;
+    }
+  }
+
+
+
+  body::after {
+    content: "";
+    background: url(../images/background.jpg);
+    opacity: 0.25;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+  }
+
+  body {
+    /**background-image: url("../images/background.jpg");
+    opacity:.5;*/
+    h4 {
+      margin: 20px auto !important;
+      width: 200px !important;
+
+    }
+  }
+.site-header {
+  height: 70px !important;
+  ul {
+    display: inline-block;
+    background-color: white;
+    box-shadow: 5px 5px 2px #888888;
+    margin-top: 8px;
+  }
+}
+
+  .navbar-collapse {
+    background-color: #2b81af !important;
+  }
+  .header {
+    background-color: #2b81af !important;
+    li {
+      display: inline-block;
+      background-color: white;
+      box-shadow: 5px 5px 2px #888888;
+      margin-top: 8px;
+    }
+    img {
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  .sectionBio {
+    box-shadow: 10px 10px 5px #888888;
+    background-color: #78DADD;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    p {
+      font-size: 19px;
+    }
+  }
+  .portfolioPict {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 4px;
+    float: left;
+  }
+}
+
+
+
+
+
+/* SKILLS */
+
+.sectionSkills {
+  box-shadow: 10px 10px 5px #888888;
+  background-color: lightskyblue;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+  margin: 50px 0px;
+    h4 {
+      font-size: 20px;
+    }
+    .skillsImages {
+      margin: 0 auto;
+      background-color: white;
+      border-radius: 10px;
+      margin: 20px;
+      img {
+        width: 90px;
+        height: 90px;
+        margin: 20px 30px;
+      }
+    }
+    .sectionEducation {
+      margin: 20px 0px 32px 20px;
+      color: white;
+      h4 {
+        color: black;
+        margin-bottom: 20px;
+      }
+    }
+}
+
+/* PORTFOLIO */
+
+.sectionPortfolio {
+  box-shadow: 10px 10px 5px #888888;
+  background-color: #A2CD5A;
+  border-radius: 10px;
+  margin: 100px 0px;
+  h4 {
+    width: 80px !important;
+  }
+  .generalWork {
+    img {
+      width:100%;
+      padding: 0 !important;
+    }
+    .details{
+      @include position(absolute, 0,0,0,0);
+      background-color: rgba(3,3,3,0.5);
+      color:white;
+    }
+  }
+}
+
+
+.sectionCapstone p {
+  margin: 0 auto !important;
+}
+
+.footer {
+  background-color: #366097;
+  height: 300px;
+  .facts {
+  opacity: .5;
+  }
+  .factsWrapper {
+    div div {
+      border-bottom: 1px solid black;
+      padding-bottom: 20px;
+      padding-top: 10px;
+    }
+  }
+  .meIcon {
+    width: 50px;
+    margin-left: 50px;
+  }
+  h4 {
+    width: 300px !important;
+  }
+}
+
+.sectionContact {
+  margin: 50px 0 50px 85px;
+  h4 {
+    width: 165px !important;
+  }
+}
+
+.gitHub {
+  margin: 0 auto;
+  width: 60px;
+  img {
+    margin-right: 20px;
+  }
+}
+
+.sectionCapstone {
+  margin: 30px auto ;
+  width: 350px;
+  font-family: Georgia, Serif;
+  font-size: 20px;
+  }
+
+
+/*
+.sectionsWrapper {
+  margin: 0 15px;
+  width: auto;
+
+  @media screen and (min-width: 500px) {
+    margin:0 auto;
+    max-width: 470px;
+  }
+  @media screen and (min-width: 800px) {
+    max-width: 760px;
+  }
+}
+*/
+
+
+/*
+  .generalWork {
+      img {
+        width: 200px;
+        height: 100px;
+      }
+  }
+}
+*/
