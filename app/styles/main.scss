@@ -211,37 +211,55 @@ body {
       @include position(absolute, 0,0,0,0);
       background-color: rgba(3,3,3,0.5);
       color:white;
+      display:none;
+    }
+    > div:hover .details {
+      display:block;
     }
   }
 }
 
+/* FACTS */
 
-.sectionCapstone p {
-  margin: 0 auto !important;
-}
-
-.footer {
+.sectionFacts {
   background-color: #366097;
-  height: 300px;
+  padding-bottom:20px;
+
   .facts {
-  opacity: .5;
+    opacity: .5;
   }
   .factsWrapper {
     div div {
       border-bottom: 1px solid black;
       padding-bottom: 20px;
       padding-top: 10px;
+      height:80px;
+    }
+    > div:nth-child(6) div{
+      border-bottom: none;
+    }
+    @media(min-width: $screen-sm-min){
+      > div:nth-child(5) div, > div:nth-child(6) div {
+        border-bottom: none;
+      }
+    }
+    @media(min-width: $screen-md-min){
+      > div:nth-child(4) div, > div:nth-child(5) div, > div:nth-child(6) div {
+        border-bottom: none;
+      }
     }
   }
   .meIcon {
     width: 50px;
-    margin-left: 50px;
+    margin: 0 auto;
+    display: block;
   }
   h4 {
     width: 300px !important;
   }
 }
 
+/* CONTACTS */
 .sectionContact {
   margin: 50px 0 50px 85px;
   h4 {
@@ -249,20 +267,26 @@ body {
   }
 }
 
-.gitHub {
-  margin: 0 auto;
-  width: 60px;
-  img {
-    margin-right: 20px;
-  }
-}
+
 
 .sectionCapstone {
   margin: 30px auto ;
   width: 350px;
   font-family: Georgia, Serif;
   font-size: 20px;
+
+  p {
+    margin: 0 auto !important;
   }
+
+  .gitHub {
+    margin: 0 auto;
+    width: 60px;
+    img {
+      margin-right: 20px;
+    }
+  }
+}
 
 
 /*
