@@ -1,1 +1,6 @@
-console.log('\'Allo \'Allo!'); // eslint-disable-line no-console
+var wlApp = {
+  openInNewTab: function(url){
+    var win = window.open(url, '_blank');
+    win.focus();
+  }
+};
