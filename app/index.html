@@ -12,10 +12,15 @@
 
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
+    <link rel="stylesheet" href="/bower_components/openSans/openSans.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="animate.min.css">
+
+
     <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
@@ -51,7 +56,7 @@
                 <span class="icon-bar"></span>
               </button>
               <div class="navbar-logo">
-                <img src="images/Lightbulb-copy.png">
+                <img class="animated flash lightbulb" src="images/Lightbulb-copy.png">
               </div>
 
             </div>
@@ -121,76 +126,80 @@
         <div class="portfolioContent">
           <h4>Portfolio</h4>
         </div>
-
-        <div class="row row-no-padding row-no-margin generalWork">
-            <div class="col-xs-12 col-sm-6">
-              <img class="capstonePhoto" src="images/portfolioimages/capstoness.png">
-              <div class="details"">
-              <strong>CAPSTONE PROJECT<br></strong>
-                <br>
-                Uses _____ technology
+<div class="workWrapper">
+          <div class="row row-no-padding row-no-margin generalWork">
+              <div class="col-xs-12 col-sm-6">
+                <img class="capstonePhoto" src="images/portfolioimages/capstoness.png">
+                <div class="details"">
+                <strong>CAPSTONE PROJECT<br></strong>
+                  <br>
+                  Uses _____ technology
+                </div>
               </div>
-            </div>
-            <div class="col-xs-12 col-sm-6">
-              <img class="preschoolProj" src="images/portfolioimages/portfoliopiecess.png">
-              <div class="details">
-                <strong>MAPLEWOOD PRESCHOOL<br></strong>
-                <br>
-                Designed for a Preschool in Edmonds, Wa.<br>
-                Uses HTML5, CSS3, Javascript, Sass, JQuery.
+              <div class="col-xs-12 col-sm-6">
+                <img class="preschoolProj" src="images/portfolioimages/portfoliopiecess.png">
+                <div class="details">
+                  <strong>MAPLEWOOD PRESCHOOL<br></strong>
+                  <br>
+                  Designed for a Preschool in Edmonds, Wa.<br>
+                  Uses HTML5, CSS3, Javascript, Sass, JQuery.
+                </div>
               </div>
-            </div>
-            <div class="col-xs-12 col-sm-6">
-              <img class="zenGardenProj" src="images/portfolioimages/csszengarden.png">
-              <div class="details" onclick="wlApp.openInNewTab('http://whitneylarios.com/wats1010-css-zen-garden/')";>
-                <strong>CSS ZEN GARDEN PROJECT<br></strong>
-                <br>
-                Uses HTML5, CSS3.
+              <div class="col-xs-12 col-sm-6">
+                <img class="zenGardenProj" src="images/portfolioimages/csszengarden.png">
+                <div class="details" onclick="wlApp.openInNewTab('http://whitneylarios.com/wats1010-css-zen-garden/')";>
+                  <strong>CSS ZEN GARDEN PROJECT<br></strong>
+                  <br>
+                  Uses HTML5, CSS3.
+                </div>
               </div>
-            </div>
-            <div class="col-xs-12 col-sm-6">
-             <img class="weatherApp" src="images/portfolioimages/weatherapp.png">
-              <div class="details" onclick="wlApp.openInNewTab('http://whitneylarios.com/calendaraggregatorapp/#/')";>
-                <strong>WEATHER LOCATOR APPLICATION PROJECT<br></strong>
-                <br>
-                Designed to locate weather around the world in detail.<br>
-                Uses HTML5, CSS3, Javascript, Sass, AngularJS, Node.JS.
+              <div class="col-xs-12 col-sm-6">
+               <img class="weatherApp" src="images/portfolioimages/weatherapp.png">
+                <div class="details" onclick="wlApp.openInNewTab('http://whitneylarios.com/calendaraggregatorapp/#/')";>
+                  <strong>WEATHER LOCATOR APPLICATION PROJECT<br></strong>
+                  <br>
+                  Designed to locate weather around the world in detail.<br>
+                  Uses HTML5, CSS3, Javascript, Sass, AngularJS, Node.JS.
+                </div>
               </div>
-            </div>
-            <div class="col-xs-12 col-sm-6">
-              <img class="aquarium" src="images/portfolioimages/aquariumss.png">
-              <div class="details" onclick="wlApp.openInNewTab('http://whitneylarios.com/wats3020-finalproject/')";>
-                <strong>MOCK COMPANY WEBSITE PROJECT<br></strong>
-                <br>
-                Designed to impliment Javascript skills. <br>
-                Uses HTML5, CSS3, Javascript, JQuery.
+              <div class="col-xs-12 col-sm-6">
+                <img class="aquarium" src="images/portfolioimages/aquariumss.png">
+                <div class="details" onclick="wlApp.openInNewTab('http://whitneylarios.com/wats3020-finalproject/')";>
+                  <strong>MOCK COMPANY WEBSITE PROJECT<br></strong>
+                  <br>
+                  Designed to impliment Javascript skills. <br>
+                  Uses HTML5, CSS3, Javascript, JQuery.
+                </div>
               </div>
-            </div>
-            <div class="col-xs-12 col-sm-6">
-             <img class="maps" src="images/portfolioimages/mapss.png">
-              <div class="details" onclick="wlApp.openInNewTab('http://whitneylarios.com/wats1020-add-a-map/#map')";>
-                <strong>MAP WEBSITE<br></strong>
-                <br>
-                Designed to impliment Javascript skills. <br>
-                Uses HTML5, CSS3, Javascript, JQuery.
+              <div class="col-xs-12 col-sm-6">
+               <img class="maps" src="images/portfolioimages/mapss.png">
+                <div class="details" onclick="wlApp.openInNewTab('http://whitneylarios.com/wats1020-add-a-map/#map')";>
+                  <strong>MAP WEBSITE<br></strong>
+                  <br>
+                  Designed to impliment Javascript skills. <br>
+                  Uses HTML5, CSS3, Javascript, JQuery.
+                </div>
               </div>
-            </div>
-          </div>
-
-        <div class="sectionCapstone">
-          <p>Check out more of my work on Github</p>
-          <div class="gitHub"><a href="https://github.com/lariosw"><img src="images/github.png"></a></div>
-          </p>
         </div>
       </div>
 
+
+        <div class="sectionCapstone">
+          <div class="gitHub">
+            <p>Check out more of my work on Github</p>
+            <a href="https://github.com/lariosw"><img src="images/github.png"></a>
+          </div>
+        </div>
+      </div>
       <!-- contact-->
-      <a name="sectionContact"></a>
       <div class="row sectionContact">
-        <h4 class="contact">Contact</h4>
-        <h5 class="contactEmail">whitney.larios@gmail.com</h5>
-        <h5 class="contactPhone">206-618-8972</h5>
-        <div class="contactImages">
+        <div class="contactInfo">
+          <h4 class="contact">Contact</h4>
+          <h5 class="contactEmail">whitney.larios@gmail.com</h5>
+          <h5 class="contactPhone">206-618-8972</h5>
+        </div>
+
+        <div class="row contactImages">
           <a class="col-xs-4 linkedIn" href="https://www.linkedin.com/in/whitney-larios-5b762011a"><img src="images/linkedinicon.png"></a>
           <!--<a class="col-xs-4 email" href=""><img src="images/emailicon.png"></a> -->
           <a  class="col-xs-4 email" href="mailto:whitney.larios@gmail.com?Subject=Contact Me" target="_top"><img src="images/emailicon.png"></a>

@@ -105,8 +105,8 @@ body {
     opacity:.5;*/
     h4 {
       margin: 20px auto !important;
-      width: 200px !important;
-
+      font-weight: 800;
+      font-size: 40px;
     }
   }
 .site-header {
@@ -165,11 +165,12 @@ body {
 .sectionSkills {
   box-shadow: 10px 10px 5px #888888;
   background-color: lightskyblue;
-  border-radius: 10px;
+  /*border-radius: 10px;*/
   padding: 10px 10px 10px 10px;
   margin: 50px 0px;
     h4 {
-      font-size: 20px;
+      text-align: center;
+      font-size: 40px;
     }
     .skillsImages {
       margin: 0 auto;
@@ -183,7 +184,7 @@ body {
       }
     }
     .sectionEducation {
-      margin: 20px 0px 32px 20px;
+      margin: 40px 0px 32px 20px;
       color: white;
       h4 {
         color: black;
@@ -195,12 +196,17 @@ body {
 /* PORTFOLIO */
 
 .sectionPortfolio {
+  /*background-color: white;
   box-shadow: 10px 10px 5px #888888;
-  background-color: #A2CD5A;
-  border-radius: 10px;
-  margin: 100px 0px;
+  border-radius: 10px;*/
+  margin: 100px 0px !important;
+  padding: 4px 0;
   h4 {
-    width: 80px !important;
+    width: 200px !important;
+  }
+
+  .workWrapper {
+    box-shadow: 10px 10px 5px #888888;
   }
   .generalWork {
     img {
@@ -212,6 +218,8 @@ body {
       background-color: rgba(3,3,3,0.5);
       color:white;
       display:none;
+      text-align: center;
+      padding-top: 55px;
     }
     > div:hover .details {
       display:block;
@@ -227,6 +235,10 @@ body {
 
   .facts {
     opacity: .5;
+    h4 {
+      margin: 0 auto;
+      width: 600px;
+    }
   }
   .factsWrapper {
     div div {
@@ -254,23 +266,31 @@ body {
     margin: 0 auto;
     display: block;
   }
-  h4 {
-    width: 300px !important;
-  }
 }
 
 /* CONTACTS */
 .sectionContact {
-  margin: 50px 0 50px 85px;
+  text-align: center;
+  border-top: 3px solid black;
+  padding: 140px 0;
   h4 {
     width: 165px !important;
   }
   h5 {
     width: 300px;
-    margin: 15px auto;
+    margin: 15px auto !important;
   }
 }
 
+.contactInfo {
+  float: left;
+  margin-top: -44px;
+  padding-bottom: 30px;
+}
+
+.contactImages {
+  float: right;
+}
 
 
 .sectionCapstone {
@@ -284,9 +304,15 @@ body {
   }
 
   .gitHub {
-    margin: 0 auto;
-    width: 60px;
+    margin: 50px auto;
+    width: 450px;
+
+    p{
+      float: left;
+    }
     img {
+      float: right;
+      width: 60px;
       margin-right: 20px;
     }
   }
