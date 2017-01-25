@@ -48,7 +48,7 @@ module.exports = function (grunt) {
       profile: {
         options: {
           remote: 'https://github.com/lariosw/lariosw.github.io.git',
-          branch: 'master'
+          branch: 'latest-version'
         }
       }
     },
