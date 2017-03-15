@@ -31,52 +31,42 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <a name="sectionHome"></a>
+    <div class="homepage">
+      <div class="navbar-logo">
+        <img class="animated flash lightbulb" src="images/Lightbulb-copy.png">
+      </div>
+      <a name="sectionHome"></a>
+      <!--navigation !-->
+      <div class="row sections-nav">
+        <div class="nav active col-xs-3"><a href="">about.</a></div>
+        <div class="nav skills-nav  col-xs-3"><a href="#sectionSkills">skills.</a></div>
+        <div class="nav portfolio-nav col-xs-3"><a href="#sectionPortfolio">portfolio.</a></div>
+        <div class="nav contact-nav col-xs-3"><a href="#sectionContact">contact.</a></div>
+      </div>
+    </div>
     <div class="container">
-      <!-- header-->
-      <!--<div class="header">
-        <ul class="nav pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="skills">Skills</a></li>
-          <li><a href="portfolio">Portfolio</a></li>
-          <li><a href="contact">Contact</a></li>
-        </ul>
-        <img src="images/Lightbulb%20copy.png">
-      </div> -->
+    <!--page logo !-->
 
-      <div class="site-header">
-        <!-- Top page navigation -->
+
+
+
+
+
+      <!--
         <div class="navbar navbar-default" role="navigation">
-            <div class="navbar-header header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <div class="navbar-logo">
-                <img class="animated flash lightbulb" src="images/Lightbulb-copy.png">
-              </div>
 
-            </div>
-
-           <div class="collapse navbar-collapse" id="js-navbar-collapse">
-
-              <ul class="nav navbar-nav pull-right">
-                  <li class="active"><a href="#sectionHome">Home</a></li>
-                  <li><a href="#sectionSkills">Skills</a></li>
-                  <li><a href="#sectionPortfolio">Portfolio</a></li>
-                  <li><a href="#sectionContact">Contact</a></li>
-                </ul>
-            </div>
-          </div>
         </div>
+        <div class="collapse navbar-collapse" id="js-navbar-collapse">
+        </div>
+         </div>
+    -->
 
 
 
+       <!-- about.-->
 
-      <!-- bio-->
       <div class="sectionBio jumbotron">
+        <h1 class="about">about.</h1>
         <img id="mainpicture" class="portfolioPict" src="images/portfoliopict.jpg">
         <h1 class="lead">I am Whitney Larios, a front end web developer and creative being. </h1>
 
@@ -84,6 +74,9 @@
             that make a difference in the user's life. I am a team-oriented front-end developer with a keen eye for user experience design
             and web architecture. I am a life-long learner who appreciates the always changing world of technology. I learn new
             skills quickly and can work on any topic or project that is thrown my way.</p>
+        <br>
+        <p>Seattle University, B.A.</p>
+        <p>Seattle University, Certificate in Front End Web Development</p>
       </div>
 
       <!-- skills-->
@@ -106,6 +99,7 @@
               <img class="wordpress col-xs-6 col-sm-3 col-md-2 col-lg-2" src="images/wordpress.png">
           </div>
 
+        <!--
           <div class="row sectionEducation">
             <h4>Education</h4>
             <img class="su col-xs-2" src="images/SU-redhawk-seattle-university-26729530.jpg">
@@ -113,6 +107,7 @@
             <p>Seattle University, B.A.</p>
             <p>Seattle University, Certificate in Front End Web Development</p>
             </div>
+            !-->
           </div>
 
       </div>
@@ -127,7 +122,7 @@
           <div class="row row-no-padding row-no-margin generalWork">
               <div class="col-xs-12 col-sm-6">
                 <img class="capstonePhoto" src="images/portfolioimages/capstonepict.png">
-                <div class="details">
+                <div class="details" onclick="wlApp.openInNewTab('http://www.whitneylarios.com/programmingsite/#!/')";>
                 <strong>CAPSTONE PROJECT<br></strong>
                   <br>
                   Designed for as a final project to allow users to search for coding events in Seattle, Wa.<br>
@@ -137,7 +132,7 @@
               </div>
               <div class="col-xs-12 col-sm-6">
                 <img class="preschoolProj" src="images/portfolioimages/maplewoodpict.png">
-                <div class="details" onclick="wlApp.openInNewTab('http://preschool.whitneylarios.com/')";>
+                <div class="details" onclick="wlApp.openInNewTab('http://preschool.maplewoodpres.org/')";>
                   <strong>MAPLEWOOD PRESCHOOL<br></strong>
                   <br>
                   Designed for a Preschool in Edmonds, Wa.<br>
@@ -209,27 +204,32 @@
 
     </div>
       <!-- footer -->
-      <div class="row sectionFacts footer col-xs-hidden">
-        <div class="facts">
-          <h4>Interesting Facts about Me</h4>
-          <div class="col-xs-2 factsPix">
-            <div class="col-xs-12"><img class="meIcon" src="images/Laptop.png"></div>
-            <div class="col-xs-12"><img class="meIcon" src="images/Flower-Pot.png"></div>
-            <div class="col-xs-12"><img class="meIcon" src="images/Paint-Palette.png"></div>
-          </div>
-          <div class="row col-xs-10 factsWrapper">
-            <div class="col-xs-12 col-sm-6 col-md-4"><div>I am a master crafter who loves to paint, draw, sew or create anything on Pinterest.</div></div>
-            <div class="col-xs-12 col-sm-6 col-md-4"><div>I was born and raised in Seattle, WA and love my city!</div></div>
-            <div class="col-xs-12 col-sm-6 col-md-4"><div>I have never been out of North America.</div></div>
-            <div class="col-xs-12 col-sm-6 col-md-4"><div>I love to cook food from around the world especially hispanic food.</div></div>
-            <div class="col-xs-12 col-sm-6 col-md-4"><div>I am a life long learner, and love to learn new things.</div></div>
-            <div class="col-xs-12 col-sm-6 col-md-4"><div>I have my own organic garden.</div></div>
-          </div>
+    <div class="sectionFacts footer">
+      <div> © 2017 by Whitney Larios.</div>
+    </div>
+    <!--
+     <div class="row sectionFacts footer col-xs-hidden">
+       <div class="facts">
+         <h4>Interesting Facts about Me</h4>
+         <div class="col-xs-2 factsPix">
+           <div class="col-xs-12"><img class="meIcon" src="images/Laptop.png"></div>
+           <div class="col-xs-12"><img class="meIcon" src="images/Flower-Pot.png"></div>
+           <div class="col-xs-12"><img class="meIcon" src="images/Paint-Palette.png"></div>
+         </div>
+         <div class="row col-xs-10 factsWrapper">
+           <div class="col-xs-12 col-sm-6 col-md-4"><div>I am a master crafter who loves to paint, draw, sew or create anything on Pinterest.</div></div>
+           <div class="col-xs-12 col-sm-6 col-md-4"><div>I was born and raised in Seattle, WA and love my city!</div></div>
+           <div class="col-xs-12 col-sm-6 col-md-4"><div>I have never been out of North America.</div></div>
+           <div class="col-xs-12 col-sm-6 col-md-4"><div>I love to cook food from around the world especially hispanic food.</div></div>
+           <div class="col-xs-12 col-sm-6 col-md-4"><div>I am a life long learner, and love to learn new things.</div></div>
+           <div class="col-xs-12 col-sm-6 col-md-4"><div>I have my own organic garden.</div></div>
+         </div>
+         -->
 
-      </div>
+     </div>
 
 
-    <!-- build:js(.) scripts/vendor.js -->
+   <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <!-- endbower -->

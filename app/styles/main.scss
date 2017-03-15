@@ -16,7 +16,6 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
 /* Space out content a bit */
 body {
-  padding-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -62,12 +61,18 @@ body {
   }
 }
 
+.homepage {
+  background-image: url('/images/compbackground.jpeg');
+  margin: 0 !important;
+  max-width: 100% !important;
+  height: 600px;
+}
 
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 730px;
+    max-width: 820px;
   }
 
   /* Remove the padding we set earlier */
@@ -88,7 +93,7 @@ body {
 
 
 
-  body::after {
+  /*body::after {
     content: "";
     background: url(../images/background.jpg);
     opacity: 0.25;
@@ -98,7 +103,7 @@ body {
     right: 0;
     position: fixed;
     z-index: -1;
-  }
+  }*/
 
   body {
     /**background-image: url("../images/background.jpg");
@@ -111,36 +116,45 @@ body {
   }
 .site-header {
   height: 70px !important;
-  ul {
-    display: inline-block;
-    background-color: white;
-    box-shadow: 5px 5px 2px #888888;
-    margin-top: 8px;
-  }
 }
+
+  .navbar-logo {
+    width: 100px;
+    margin: 0 auto 20px auto;
+
+  }
 
   .navbar-collapse {
     background-color: #2b81af !important;
   }
   .header {
     background-color: #2b81af !important;
-    li {
-      display: inline-block;
-      background-color: white;
-      box-shadow: 5px 5px 2px #888888;
-      margin-top: 8px;
-    }
     img {
       width: 70px;
       height: 70px;
     }
   }
+  .sections-nav {
+  margin-bottom: 200px;
+    .nav{
+      width: 240px;
+      display: inline-block;
+      margin: 0 auto !important;
+      a {
+        color: white;
+        font-size: 30px;
+        text-shadow: 2px 2px #000000;
+      }
+    }
+  }
+
 
   .sectionBio {
     box-shadow: 10px 10px 5px #888888;
     background-color: #78DADD;
-    margin-top: 60px;
-    margin-bottom: 100px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    padding: 10px 60px 60px 60px;
     p {
       font-size: 19px;
     }
@@ -180,7 +194,7 @@ body {
       img {
         width: 90px;
         height: 90px;
-        margin: 20px 30px;
+        margin: 10px 30px;
       }
     }
     .sectionEducation {
