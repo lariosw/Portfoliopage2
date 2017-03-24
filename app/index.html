@@ -24,80 +24,83 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
+    <script src="https://use.fontawesome.com/84a76175a7.js"></script>
 
   </head>
   <body>
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+  <div id="homepage-background">
+    <a href="#about"><i class="fa fa-angle-double-down fa-4x" aria-hidden="true"></i></a>
+  </div>
+
+    <!-- fixed arrow up to homepage !-->
+    <a href="#sectionHome"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
 
     <div class="homepage">
+      <a name="sectionHome"></a>
       <div class="navbar-logo">
         <img class="animated flash lightbulb" src="images/Lightbulb-copy.png">
       </div>
-      <a name="sectionHome"></a>
       <!--navigation !-->
       <div class="row sections-nav">
-        <div class="nav active col-xs-3"><a href="">about.</a></div>
+        <div class="nav active col-xs-3"><a href="#about">about.</a></div>
         <div class="nav skills-nav  col-xs-3"><a href="#sectionSkills">skills.</a></div>
         <div class="nav portfolio-nav col-xs-3"><a href="#sectionPortfolio">portfolio.</a></div>
         <div class="nav contact-nav col-xs-3"><a href="#sectionContact">contact.</a></div>
       </div>
     </div>
     <div class="container">
-    <!--page logo !-->
 
 
-
-
-
-
-      <!--
-        <div class="navbar navbar-default" role="navigation">
-
-        </div>
-        <div class="collapse navbar-collapse" id="js-navbar-collapse">
-        </div>
-         </div>
-    -->
-
-
-
-       <!-- about.-->
-
-      <div class="sectionBio jumbotron">
+    <div class="sectionBio jumbotron">
+      <a name="about"></a>
         <h1 class="about">about.</h1>
         <img id="mainpicture" class="portfolioPict" src="images/portfoliopict.jpg">
-        <h1 class="lead">I am Whitney Larios, a front end web developer and creative being. </h1>
+        <h2 class="lead">I am Whitney Larios, a front end web developer and creative being. </h2>
 
+      <div class="about-me-content">
           <p>I am a creative person with a love for problem-solving. I am passionate about building unique web programs
             that make a difference in the user's life. I am a team-oriented front-end developer with a keen eye for user experience design
             and web architecture. I am a life-long learner who appreciates the always changing world of technology. I learn new
             skills quickly and can work on any topic or project that is thrown my way.</p>
         <br>
+        <p>Education:</p>
         <p>Seattle University, B.A.</p>
         <p>Seattle University, Certificate in Front End Web Development</p>
       </div>
-
+    </div>
+    </div>
       <!-- skills-->
-      <a name="sectionSkills"></a>
-      <div class="sectionSkills">
-        <h4>Skills & Languages</h4>
+    <div class="skills-container">
+      <div class="section-skills-wrapper"><a name="sectionSkills"></a>
+      <h1 class="skills">skills.</h1>
 
-          <div class="row skillsImages">
-              <img class="html col-xs-6 col-sm-3 col-md-2 col-lg-2" src="images/html5.png">
-              <img class="js col-xs-6 col-sm-3 col-md-2 col-lg-2" src="images/javascript.png">
-              <img class="jquery col-xs-6 col-sm-3 col-md-2 col-lg-2" src="images/jquery.png">
-              <img class="sass col-xs-6 col-sm-3 col-md-2 col-lg-2" src="images/sass.png">
-              <img class="angular col-xs-6 col-sm-3 col-md-2 col-lg-2" src="images/angular.png">
-              <img class="node col-xs-6 col-sm-3 col-md-2 col-lg-2" src="images/nodejsicon.png">
-              <img class="bower col-xs-6 col-sm-3 col-md-2 col-lg-2" src="images/bowericon.png">
-              <img class="grunt col-xs-6 col-sm-3 col-md-2 col-lg-2" src="images/grunticon.png">
-              <img class="gulp col-xs-6 col-sm-3 col-md-2 col-lg-2" src="images/gulp.png">
-              <img class="npm col-xs-6 col-sm-3 col-md-2 col-lg-2" src="images/npm.png">
-              <img class="yo col-xs-6 col-sm-3 col-md-2 col-lg-2" src="images/yoicon.png">
-              <img class="wordpress col-xs-6 col-sm-3 col-md-2 col-lg-2" src="images/wordpress.png">
+      <div class="row sectionSkills">
+        <div class="skills-content col-xs-12 col-sm-12 col-md-3">
+         My technologies:
+          HTML5, CSS3, Javascript, JQuery, Sass, AngularJS, Node.js,
+          Bower, Grunt, Gulp, NPM, Yeoman, Ajax, Bootstrap, Wordpress, Git
+        </div>
+
+        <div class="skills-icons-section col-xs-12 col-sm-12 col-md-6">
+          <div class="row hidden-xs skillsImages">
+              <img class="language html col-xs-3 col-sm-3" src="images/html5.png">
+              <img class="language js col-xs-3 col-sm-3" src="images/javascript.png">
+              <img class="language jquery col-xs-3 col-sm-3" src="images/jquery.png">
+              <img class="language sass col-xs-3 col-sm-3" src="images/sass.png">
+              <img class="language angular col-xs-3 col-sm-3" src="images/angular.png">
+              <img class="language node col-xs-3 col-sm-3" src="images/nodejsicon.png">
+              <img class="language bower col-xs-3 col-sm-3" src="images/bowericon.png">
+              <img class="language grunt col-xs-3 col-sm-3" src="images/grunticon.png">
+              <img class="language gulp col-xs-3 col-sm-3" src="images/gulp.png">
+              <img class="language npm col-xs-3 col-sm-3" src="images/npm.png">
+              <img class="language yo col-xs-3 col-sm-3" src="images/yoicon.png">
+              <img class="language wordpress col-xs-3 col-sm-3" src="images/wordpress.png">
           </div>
+        </div>
+        </div>
 
         <!--
           <div class="row sectionEducation">
@@ -112,97 +115,132 @@
 
       </div>
 
+
       <!-- portfolio-->
-      <a name="sectionPortfolio"></a>
-      <div class="sectionPortfolio">
-        <div class="portfolioContent">
-          <h4>Portfolio</h4>
-        </div>
-<div class="workWrapper">
+
+      <div class="sectionPortfolio"> <a name="sectionPortfolio"></a>
+        <h1 class="portfolio-title">portfolio.</h1>
+        <div class="workWrapper">
           <div class="row row-no-padding row-no-margin generalWork">
-              <div class="col-xs-12 col-sm-6">
-                <img class="capstonePhoto" src="images/portfolioimages/capstonepict.png">
-                <div class="details" onclick="wlApp.openInNewTab('http://www.whitneylarios.com/programmingsite/#!/')";>
-                <strong>CAPSTONE PROJECT<br></strong>
-                  <br>
-                  Designed for as a final project to allow users to search for coding events in Seattle, Wa.<br>
-                  Uses HTML5, CSS3, Javascript, Sass, AngularJS.
 
+            <div class="project col-xs-12 col-sm-6">
+              <strong><div class="site-link-name">CAPSTONE PROJECT<br></div></strong>
+              <div class="view view-site col-xs-6"><a class="project-view" href="http://www.whitneylarios.com/programmingsite/#!/" target="_blank">View Project</a></div>
+              <div class="view view-code col-xs-6"><a class="code-view" href="https://github.com/lariosw/programmingsite" target="_blank">View Source Code</a></div>
+                <div class="col-xs-12">
+                  <img class="capstonePhoto" src="images/portfolioimages/capstonepict.png">
+                  <div class="details">
+                  <!--  <div class="details" onclick="wlApp.openInNewTab('http://www.whitneylarios.com/programmingsite/#!/')";> -->
+                    <br>
+                    Designed for as a final project to allow users to search for coding events in Seattle, Wa.<br>
+                    Uses HTML5, CSS3, Javascript, Sass, AngularJS.<br>
+                  </div>
+                </div>
+             </div>
+
+              <div class="project col-xs-12 col-sm-6">
+                <strong><div class="site-link-name">MAPLEWOOD PRESCHOOL<br></div></strong>
+                <div class="view-site col-xs-6"><a class="project-view" href="http://preschool.maplewoodpres.org/" target="_blank">View Project</a></div>
+                <div class="view-code col-xs-6"><a class="code-view" href="https://github.com/lariosw/preschoolpage/tree/development" target="_blank">View Source Code</a></div>
+                <div class="col-xs-12">
+                  <img class="preschoolProj" src="images/portfolioimages/maplewoodpict.png">
+                  <div class="details">
+                  <!-- <div class="details" onclick="wlApp.openInNewTab('http://preschool.maplewoodpres.org/')";> -->
+                    <br>
+                    Designed for a Preschool in Edmonds, Wa.<br>
+                    Uses HTML5, CSS3, Javascript, Sass, JQuery.<br>
+                  </div>
                 </div>
               </div>
-              <div class="col-xs-12 col-sm-6">
-                <img class="preschoolProj" src="images/portfolioimages/maplewoodpict.png">
-                <div class="details" onclick="wlApp.openInNewTab('http://preschool.maplewoodpres.org/')";>
-                  <strong>MAPLEWOOD PRESCHOOL<br></strong>
-                  <br>
-                  Designed for a Preschool in Edmonds, Wa.<br>
-                  Uses HTML5, CSS3, Javascript, Sass, JQuery.
+
+
+              <div class="project col-xs-12 col-sm-6">
+                <strong><div class="site-link-name">CSS ZEN GARDEN PROJECT<br></div></strong>
+                <div class="view-site col-xs-6"><a class="project-view" href="http://whitneylarios.com/wats1010-css-zen-garden/" target="_blank">View Project</a></div>
+                <div class="view-code col-xs-6"><a class="code-view" href="https://github.com/lariosw/wats1010-css-zen-garden" target="_blank">View Source Code</a></div>
+                <div class="col-xs-12">
+                  <img class="zenGardenProj" src="images/portfolioimages/csszengarden.png">
+                  <div class="details">
+                  <!-- <div class="details" onclick="wlApp.openInNewTab('http://whitneylarios.com/wats1010-css-zen-garden/')";> -->
+                    <br>
+                    Uses HTML5, CSS3.<br>
+                  </div>
                 </div>
               </div>
-              <div class="col-xs-12 col-sm-6">
-                <img class="zenGardenProj" src="images/portfolioimages/csszengarden.png">
-                <div class="details" onclick="wlApp.openInNewTab('http://whitneylarios.com/wats1010-css-zen-garden/')";>
-                  <strong>CSS ZEN GARDEN PROJECT<br></strong>
-                  <br>
-                  Uses HTML5, CSS3.
+
+
+            <div class="project col-xs-12 col-sm-6">
+              <strong><div class="site-link-name">WEATHER LOCATOR PROJECT<br></div></strong>
+              <div class="view-site col-xs-6"><a class="project-view" href="http://whitneylarios.com/calendaraggregatorapp/#/" target="_blank">View Project</a></div>
+              <div class="view-code col-xs-6"><a class="code-view" href="https://github.com/lariosw/calendaraggregatorapp" target="_blank">View Source Code</a></div>
+              <div class="col-xs-12">
+                <img class="weatherApp" src="images/portfolioimages/weatherapp.png">
+                  <div class="details">
+                  <!-- <div class="details" onclick="wlApp.openInNewTab('http://whitneylarios.com/calendaraggregatorapp/#/')";> -->
+                   <br>
+                   Designed to locate weather around the world in detail.<br>
+                   Uses HTML5, CSS3, Javascript, Sass, AngularJS, Node.JS.<br>
+                  </div>
+              </div>
+            </div>
+
+             <div class="project col-xs-12 col-sm-6">
+               <strong><div class="site-link-name">MOCK COMPANY WEBSITE PROJECT<br></div></strong>
+               <div class="view-site col-xs-6"><a class="project-view" href="http://whitneylarios.com/wats3020-finalproject/" target="_blank">View Project</a></div>
+               <div class="view-code col-xs-6"><a class="code-view" href="https://github.com/lariosw/wats3020-finalproject" target="_blank">View Source Code</a></div>
+               <div class="col-xs-12">
+                 <img class="aquarium" src="images/portfolioimages/aquariumss.png">
+                 <!-- <div class="details" onclick="wlApp.openInNewTab('http://whitneylarios.com/wats3020-finalproject/')";> -->
+                  <div class="details">
+                    <br>
+                    Designed to implement Javascript skills. <br>
+                    Uses HTML5, CSS3, Javascript, JQuery.<br>
+                  </div>
+               </div>
+             </div>
+
+
+              <div class="project col-xs-12 col-sm-6">
+                <strong><div class="site-link-name">MAP WEBSITE<br></div></strong>
+                <div class="view-site col-xs-6"><a class="project-view" href="http://whitneylarios.com/wats1020-add-a-map/#map" target="_blank">View Project</a></div>
+                <div class="view-code col-xs-6"><a class="code-view" href="https://github.com/lariosw/wats1020-add-a-map" target="_blank">View Source Code</a></div>
+                <div class="col-xs-12">
+                  <img class="maps" src="images/portfolioimages/mapss.png">
+                  <div class="details">
+                 <!-- <div class="details" onclick="wlApp.openInNewTab('http://whitneylarios.com/wats1020-add-a-map/#map')";> -->
+                    <br>
+                    Designed to implement Javascript skills. <br>
+                    Uses HTML5, CSS3, Javascript, JQuery.<br>
+                  </div>
                 </div>
               </div>
-              <div class="col-xs-12 col-sm-6">
-               <img class="weatherApp" src="images/portfolioimages/weatherapp.png">
-                <div class="details" onclick="wlApp.openInNewTab('http://whitneylarios.com/calendaraggregatorapp/#/')";>
-                  <strong>WEATHER LOCATOR APPLICATION PROJECT<br></strong>
-                  <br>
-                  Designed to locate weather around the world in detail.<br>
-                  Uses HTML5, CSS3, Javascript, Sass, AngularJS, Node.JS.
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <img class="aquarium" src="images/portfolioimages/aquariumss.png">
-                <div class="details" onclick="wlApp.openInNewTab('http://whitneylarios.com/wats3020-finalproject/')";>
-                  <strong>MOCK COMPANY WEBSITE PROJECT<br></strong>
-                  <br>
-                  Designed to impliment Javascript skills. <br>
-                  Uses HTML5, CSS3, Javascript, JQuery.
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-               <img class="maps" src="images/portfolioimages/mapss.png">
-                <div class="details" onclick="wlApp.openInNewTab('http://whitneylarios.com/wats1020-add-a-map/#map')";>
-                  <strong>MAP WEBSITE<br></strong>
-                  <br>
-                  Designed to impliment Javascript skills. <br>
-                  Uses HTML5, CSS3, Javascript, JQuery.
-                </div>
-              </div>
+
         </div>
       </div>
-
-
-        <div class="sectionCapstone">
-          <div class="gitHub">
-            <p>Check out more of my work on Github</p>
-            <a href="https://github.com/lariosw"><img src="images/github.png"></a>
-          </div>
-        </div>
       </div>
+
       <!-- contact-->
       <a name="sectionContact"></a>
-      <div class="row sectionContact">
-        <div class="contactInfo">
-          <h4 class="contact">Contact</h4>
-          <h5 class="contactEmail">whitney.larios@gmail.com</h5>
-          <h5 class="contactPhone">206-618-8972</h5>
-        </div>
+      <div class="sectionContact">
 
-        <div class="row contactImages">
-          <a class="col-xs-4 linkedIn" href="https://www.linkedin.com/in/whitney-larios-5b762011a"><img src="images/linkedinicon.png"></a>
-          <!--<a class="col-xs-4 email" href=""><img src="images/emailicon.png"></a> -->
-          <a  class="col-xs-4 email" href="mailto:whitney.larios@gmail.com?Subject=Contact Me" target="_top"><img src="images/emailicon.png"></a>
-          <a class="col-xs-4 phone" href=""><img src="images/phoneicon.png"></a>
+        <div class="row contact-us-container">
+          <div class="col-xs-9 connect-container">
+            <h1 class="contact-title">contact.</h1>
+            <h3 class="name">Get in touch with me</h3>
+            <h5 class="connect contactEmail">whitney.larios@gmail.com</h5>
+            <h5 class="connect contactPhone">206-618-8972</h5>
+          </div>
+
+          <ul class="col-xs-3 contactImages">
+            <li><a class="linkedIn" href="https://www.linkedin.com/in/whitney-larios-5b762011a" target="_blank"><img src="images/linkedinicon.png"></a></li>
+            <li><a  class="email" href="mailto:whitney.larios@gmail.com?Subject=Contact Me" target="_top"><img src="images/emailicon.png"></a></li>
+            <li><a class="phone" href="tel:206-618-8972"><img src="images/phoneicon.png"></a></li>
+            <li><a class="github" href="https://github.com/lariosw"  target="_blank"><img src="images/githubtransparent.png"></a></li>
+          </ul>
         </div>
       </div>
 
-    </div>
+
       <!-- footer -->
     <div class="sectionFacts footer">
       <div> © 2017 by Whitney Larios.</div>

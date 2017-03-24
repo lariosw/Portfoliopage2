@@ -1,4 +1,8 @@
 /// Allow for boostrap rows with no padding
+.row.sections-nav{
+  margin: 30px !important;
+}
+
 .row-no-padding {
   [class*="col-"] {
     padding-left: 0 !important;
