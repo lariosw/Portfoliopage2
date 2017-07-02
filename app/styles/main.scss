@@ -227,9 +227,19 @@ body {
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    margin-right: 4px;
+    margin-right: 20px;
     float: left;
   }
+  h2 {
+    font-family: Chalkduster, fantasy;
+  }
+}
+
+
+
+.about-me-content {
+  margin: 25px 0px 30px 20px;
+  text-align: center;
 }
 
 /* SKILLS */
@@ -264,20 +274,25 @@ body {
 
 
 .sectionSkills {
-  padding: 10px 10px 10px 10px;
+  box-shadow: 1px 3px 1px #888888;
+  background-color: black;
+  color: white;
   margin: 50px 0px;
+  p {
+    color: #FFCC00;
+  }
   .skills-content {
-    color: white;
+    color: black;
   }
   .skills-icons-section {
     margin: 0 10px;
     img {
-      border: 1px solid black;
+      padding: 0 !important;
       box-shadow: 2px 2px 1px #888888;
       background-color: white;
-      width: 75px;
-      height: 70px;
-      margin: 10px 30px;
+      width: 30px;
+      height: 30px;
+      margin: 10px;
     }
   }
 
