@@ -280,12 +280,13 @@ body {
   margin: 50px 0px;
   p {
     color: #FFCC00;
+    margin: 10px;
   }
   .skills-content {
     color: black;
   }
   .skills-icons-section {
-    margin: 0 10px;
+    margin: 10px;
     img {
       padding: 0 !important;
       box-shadow: 2px 2px 1px #888888;
@@ -295,6 +296,7 @@ body {
       margin: 10px;
     }
   }
+
 
     .sectionEducation {
       margin: 40px 0px 32px 20px;
@@ -309,7 +311,10 @@ body {
 /* PORTFOLIO */
 
 .sectionPortfolio {
+  background-color: #d3d3d3;
   padding: 4px 0;
+  .project {
+  }
   .view-site {
   background-color: #696969;
   color: white;
@@ -331,7 +336,6 @@ body {
     .site-link-name {
       font-size: 16px;
       text-align: center;
-      background-color: #696969;
       color: white;
       text-shadow: 2px 2px #000000;
     }
@@ -350,7 +354,6 @@ body {
 }
 
   .generalWork {
-    border: 1px solid gray;
     img {
       width: 100%;
       padding: 0 !important;
@@ -428,11 +431,12 @@ body {
 .sectionContact {
   text-align: center;
   border-top: 3px solid black;
-  color: white;
-  background-color: #696969;
+  color: black;
   padding: 0;
   .name {
-    padding-bottom: 0;
+    padding-bottom: 10px;
+    margin: 0;
+
   }
   h4 {
     width: 165px !important;
@@ -449,18 +453,45 @@ body {
 }
 .contact-title {
   font-size:64px !important;
+  color: black;
+  inherit: black;
+  margin: 0 !important;
+  padding-bottom: 10px;
+  }
+
+
+.contactHeader {
+  text-shadow: 1px 1px white;
+  background: url('/images/backgroundbrick.jpeg');
+
 }
 .contactImages {
-  background-color:#DCDCDC;
+  background-color: #A68064;
   list-style-type: none;
-  padding-bottom: 26px;
-  padding-top: 26px;
   margin-bottom: 0px;
+  li {
+    display: inline-block;
+    .smicon {
+    color: black;
+    inherit: black;
+    font-size: 30px;
+    margin: 25px 35px;
+    text-shadow: 1px 1px grey;
+    }
+    .smicon:hover {
+      color: navajowhite;
+    }
+  }
   img {
     width: 40px;
     height: 40px;
-    padding: 5px;
-    margin: 5px;
+    margin: 30px;
+  }
+}
+
+.contactInfo {
+  li {
+    list-style-type: none;
   }
 }
 @media screen and (max-width: 500px) {
