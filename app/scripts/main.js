@@ -1,32 +1,51 @@
-/*var wlApp = {
+var wlApp = {
+  setupNavArrowManagement: function(){
+    var $backgroundElement = $("#section-home");
+    var $window = $(window);
+    var $arrow = $(".fa-angle-double-up");
+
+    //initially hide arrow
+    $arrow.hide();
+
+    //listen to window scroll for visibility
+    $window.scroll(function() {
+      var heightOfElement= $backgroundElement.offset().top + $backgroundElement.outerHeight();
+      var topOfScreen = $window.scrollTop();
+
+      if((topOfScreen < heightOfElement)){
+        $arrow.hide();
+      }
+      else {
+        $arrow.show();
+      }
+    });
+  },
+  setupLandingTypedText: function(){
+
+    var $subText = $('.head-text .sub-tagline');
+    var typed = new Typed('.head-text .typed-text', {
+      strings: ["a web developer,", "a UX Designer,", "a creative being,", "Whitney Larios."],
+      typeSpeed: 40,
+      callback: function(){
+
+      }
+    });
+    setTimeout(function(){
+      $subText.fadeIn(1500);
+    },4500);
+  },
   openInNewTab: function(url){
     var win = window.open(url, '_blank');
     win.focus();
   }
 };
-*/
-
-function onPageReady() {
-  var $backgroundElement = $("#section-home");
-  var $window = $(window);
-  var $arrow = $(".fa-angle-double-up");
-  //initially hide arrow
-  $arrow.hide();
 
 
-  //listen to window scroll for visibility
-  $window.scroll(function() {
-    var heightOfElement= $backgroundElement.offset().top + $backgroundElement.outerHeight();
-    var topOfScreen = $window.scrollTop();
+$(function(){
 
-    if((topOfScreen < heightOfElement)){
-      $arrow.hide();
-    }
-    else {
-      $arrow.show();
-    }
-  });
-}
+  wlApp.setupNavArrowManagement();
 
+  wlApp.setupLandingTypedText();
 
-$(document).ready(onPageReady);
+});
+
