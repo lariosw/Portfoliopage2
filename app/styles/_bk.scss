@@ -1,0 +1,545 @@
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+
+/*
+ * Style Imports
+ */
+@import "mixins";
+@import "bootstrapOverwrites";
+@import "home";
+@import "about";
+@import "work";
+@import "contact";
+
+
+
+.fa-angle-double-up {
+  color: #FFCC00;
+  margin-left: 5px;
+  text-shadow: .5px 2px black;
+  font-size: 40px !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 36px !important;
+  }
+  .lead {
+    font-size: 24px !important;
+  }
+}
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+
+/* Space out content a bit */
+body {
+}
+@media screen and (max-width: 768px) {
+  .lightbulb {
+    width: 60px;
+    height: 60px;
+  }
+  a {
+    color: white;
+    font-size: 16px;
+    text-shadow: 1px 1px #000000;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .sectionBio {
+    background-color: white !important;
+    p{
+      font-size: 16px;
+    }
+    img {
+      width: 136px;
+      height: 136px;
+    }
+  }
+
+
+  /* Everything but the jumbotron gets side spacing for mobile first views */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* Custom page header */
+  /*.header {
+    border-bottom: 3px  #e5e5e5;*/
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+
+  /* Custom page footer */
+  .footer {
+    padding-top: 19px;
+    color: black;
+    border-top: 1px solid #e5e5e5;
+  }
+
+  .container-narrow > hr {
+    margin: 30px 0;
+  }
+
+  /* Main marketing message and sign up button */
+  .jumbotron {
+    text-align: center;
+  }
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+
+.homepage {
+  margin: 0 !important;
+  max-width: 100% !important;
+  height: 600px;
+}
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 820px;
+  }
+}
+/* Remove the padding we set earlier */
+.header,
+.marketing,
+.footer {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Remove the bottom border on the jumbotron for visual effect */
+.jumbotron {
+  border-bottom: 0;
+  .lead {
+    font-size: 30px;
+  }
+}
+
+
+
+
+
+
+body {
+
+  /**background-image: url("../images/background.jpg");
+  opacity:.5;*/
+  h4 {
+    margin: 20px auto !important;
+    font-weight: 800;
+    font-size: 40px;
+  }
+}
+.site-header {
+  height: 70px !important;
+}
+
+.navbar-logo {
+  width: 100px;
+  margin: 0 auto 20px auto;
+
+}
+
+.navbar-collapse {
+  background-color: #2b81af !important;
+}
+.header {
+  background-color: #2b81af !important;
+  img {
+    width: 70px;
+    height: 70px;
+  }
+}
+.sections-nav {
+  margin-bottom: 200px;
+  .nav{
+    display: inline-block;
+    margin: 0 auto !important;
+    a {
+      color: white;
+      font-size: 30px;
+      text-shadow: 2px 2px #000000;
+    }
+  }
+}
+@media screen and (max-width: 766px) {
+  .sections-nav {
+    .nav {
+      a {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.fa-angle-double-down {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+}
+
+
+
+
+.sectionBio {
+  // box-shadow: 10px 10px 5px #888888;
+  background-color: white !important;
+  //#78DADD;
+  margin-top: 100px;
+  margin-bottom: 200px;
+  padding: 10px 60px 60px 60px;
+
+  .portfolioPict {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    float: left;
+  }
+  h2 {
+    font-family: Chalkduster, fantasy;
+  }
+}
+
+
+
+.about-me-content {
+  margin: 25px 0px 30px 20px;
+  text-align: center;
+}
+
+/* SKILLS */
+.skills-container {
+  max-width: 100% !important;
+  height: 500px;
+  margin: 0 !important;
+  background-image: url('/images/lightbackground.jpg');
+}
+@media screen and (max-width: 766px) {
+  .skills-container {
+    height: 300px;
+    font-size: 20px;
+    .skills {
+      padding-top: 15px;
+      width: 150px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.language {
+  border-radius: 35px;
+}
+
+.skills{
+  color: white;
+  font-size: 64px;
+  width: 220px;
+  margin: 0 auto;
+}
+
+
+.sectionSkills {
+  box-shadow: 1px 3px 1px #888888;
+  background-color: black;
+  color: white;
+  margin: 50px 0px;
+  p {
+    color: #FFCC00;
+    margin: 10px;
+  }
+  .skills-content {
+    color: black;
+  }
+  .skills-icons-section {
+    margin: 10px;
+    img {
+      padding: 0 !important;
+      box-shadow: 2px 2px 1px #888888;
+      background-color: white;
+      width: 30px;
+      height: 30px;
+      margin: 10px;
+    }
+  }
+
+
+  .sectionEducation {
+    margin: 40px 0px 32px 20px;
+    color: white;
+    h4 {
+      color: black;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+/* PORTFOLIO */
+
+.sectionPortfolio {
+  background-color: #d3d3d3;
+  padding: 4px 0;
+  .project {
+  }
+  .view-site {
+    background-color: #696969;
+    color: white;
+  }
+  .view-code {
+    background-color: #696969;
+    color: white;
+  }
+  .portfolio-title {
+    font-size: 64px;
+    width: 260px;
+    margin: 50px auto 0 auto;
+  }
+  h4 {
+    width: 200px !important;
+  }
+  .workWrapper {
+    margin: 50px 150px;
+    .site-link-name {
+      font-size: 16px;
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px #000000;
+    }
+    a {
+      color: inherit;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .workWrapper {
+      margin: 0px 10px;
+    }
+    .portfolio-title {
+      width: 150px;
+      margin: 20px auto 30px auto;
+    }
+  }
+
+  .generalWork {
+    img {
+      width: 100%;
+      padding: 0 !important;
+    }
+    .details{
+      @include position(absolute, 0,0,0,0);
+      background-color: rgba(3,3,3,0.5);
+      color:white;
+      display:none;
+      text-align: center;
+      padding-top: 55px;
+    }
+    > div:hover .details {
+      display:block;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .generalWork {
+      border: none;
+    }
+    .project {
+      margin-bottom: 10px;
+    }
+    img {
+      border: 1px solid gray;
+    }
+  }
+
+}
+
+/* FACTS */
+
+.sectionFacts {
+  background-color: black;
+  color: white;
+  padding: 5px 0px 20px 10px;
+}
+
+/*  .facts {
+    opacity: .5;
+    h4 {
+      margin: 0 auto;
+      width: 600px;
+    }
+  }
+  .factsWrapper {
+    div div {
+      border-bottom: 4px solid black;
+      padding-bottom: 20px;
+      padding-top: 10px;
+      height:80px;
+    }
+    > div:nth-child(6) div{
+      border-bottom: none;
+    }
+    @media(min-width: $screen-sm-min){
+      > div:nth-child(5) div, > div:nth-child(6) div {
+        border-bottom: none;
+      }
+    }
+    @media(min-width: $screen-md-min){
+      > div:nth-child(4) div, > div:nth-child(5) div, > div:nth-child(6) div {
+        border-bottom: none;
+      }
+    }
+  }
+  .meIcon {
+    width: 50px;
+    margin: 0 auto;
+    display: block;
+  }
+} */
+
+/* CONTACTS */
+.sectionContact {
+  text-align: center;
+  border-top: 3px solid black;
+  color: black;
+  padding: 0;
+  .name {
+    padding-bottom: 10px;
+    margin: 0;
+
+  }
+  h4 {
+    width: 165px !important;
+  }
+  h5 {
+    width: 300px;
+    margin: 15px auto !important;
+  }
+}
+
+.contactInfo {
+  width: 500px;
+  margin: 0 auto;
+}
+.contact-title {
+  font-size:64px !important;
+  color: black;
+  inherit: black;
+  margin: 0 !important;
+  padding-bottom: 10px;
+}
+
+
+.contactHeader {
+  text-shadow: 1px 1px white;
+  background: url('/images/backgroundbrick.jpeg');
+
+}
+.contactImages {
+  background-color: #A68064;
+  list-style-type: none;
+  margin-bottom: 0px;
+  li {
+    display: inline-block;
+    .smicon {
+      color: black;
+      inherit: black;
+      font-size: 30px;
+      margin: 25px 35px;
+      text-shadow: 1px 1px grey;
+    }
+    .smicon:hover {
+      color: navajowhite;
+    }
+  }
+  img {
+    width: 40px;
+    height: 40px;
+    margin: 30px;
+  }
+}
+
+.contactInfo {
+  li {
+    list-style-type: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .contactInfo {
+    .contact-title {
+      font-size:30px;
+    }
+    .name {
+      font-size: 14px;
+      padding-bottom: 0;
+    }
+    .connect {
+      font-size: 12px;
+    }
+    .contactImages {
+      width: 400px;
+      margin: 0 auto;
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+}
+
+
+
+
+/*
+.sectionsWrapper {
+  margin: 0 15px;
+  width: auto;
+
+  @media screen and (min-width: 500px) {
+    margin:0 auto;
+    max-width: 470px;
+  }
+  @media screen and (min-width: 800px) {
+    max-width: 760px;
+  }
+}
+*/
+
+
+/*
+  .generalWork {
+      img {
+        width: 200px;
+        height: 100px;
+      }
+  }
+}
+*/

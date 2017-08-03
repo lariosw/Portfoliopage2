@@ -1,0 +1,51 @@
+#section-home {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height:100%;
+  width:100%;
+  background: url('/images/compbackground.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  .wl-logo{
+
+  }
+
+  .intro {
+
+  }
+
+  .nav-down-btn{
+    .fa-angle-double-down {
+      color: white;
+      font-size: 30px;
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+    }
+  }
+  .nav-up-btn{
+    .fa-angle-double-up {
+      color: #FFCC00;
+      font-size: 40px !important;
+      text-shadow: .5px 2px black;
+      position: fixed;
+      top: 0px;
+      left: 10px;
+      z-index:222222;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+

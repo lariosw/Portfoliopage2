@@ -7,7 +7,7 @@
 */
 
 function onPageReady() {
-  var $backgroundElement = $("#homepage-background");
+  var $backgroundElement = $("#section-home");
   var $window = $(window);
   var $arrow = $(".fa-angle-double-up");
   //initially hide arrow
