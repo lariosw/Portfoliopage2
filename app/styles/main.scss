@@ -22,18 +22,51 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 #body-wrapper{
   position: absolute;
   top:100%;
-
+  left:0;
+  right:0;
 
   .sections-wrapper {
     position:relative;
-    background:lightblue;
+    // background:lightblue;
     width:80%;
     left:50%;
     margin-left: -40%;
   }
 
-  .section-footer {
-    background: lightgreen;
+}
+.section-footer {
+  width: 100% !important;
+  background: #808080;
+  padding: 30px;
+  ul {
+    width: 312px;
+    margin: 0 auto !important;
+    li {
+      list-style-type: none;
+      display: inline-block;
+      margin: 12px;
+      padding: 10px;
+      font-size: 12px;
+      background-color: #696969;
+      border-radius: 50%;
+      i {
+        color: #F4F4F4;
+        inherit: #F4F4F4;
+      }
+    }
+  }
+  /*
+  @media screen and (max-width: 480px) {
+
+    {
+
+    }
+  }
+*/
+
+  .copywright {
+    width: 160px;
+    margin: 0 auto;
+    color: #F4F4F4;
   }
 }
-

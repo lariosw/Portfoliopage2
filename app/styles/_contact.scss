@@ -1,4 +1,39 @@
 #section-contact{
-
-
+.sub-footer {
+  background-color: #373737;
+  text-align: center;
+  padding: 30px 20px 60px 20px;
+  height: 345px;
+  color: #DCD0C0;
+  .fa-handshake-o {
+    font-size: 30px;
+    font-weight: 500;
+    margin-top:20px;
+    color: #DCD0C0;
+  }
+  a {
+    font-size: 25px;
+    padding: 10px;
+    border: 2px solid #DCD0C0;
+    color: #DCD0C0;
+  }
+  h1 {
+    margin-top: 50px;
+  }
+  h4 {
+    margin-bottom: 45px;
+  }
+  }
 }
+
+.section-footerLogo {
+  width: 140px;
+  margin: 10px auto !important;
+  padding-left: 40px;
+  img {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+

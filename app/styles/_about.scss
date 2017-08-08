@@ -1,33 +1,98 @@
 #section-about {
+  background-color: #373737;
+  color: #F4F4F4;
+  padding-bottom: 40px;
   .intro {
 
   }
 
-  .data-box{
-
-    .data-title{
+  .bio {
+    font-family: monospace;
+    font-size: 15px;
+    margin: 35px;
+    padding: 0 5px;
+    h2 {
+      font-style: italic;
+      font-family: monospace;
+      font-size: 45px;
+      font-weight: bold;
+      margin: 5px auto;
+      width: 400px;
+    }
+    img {
+      float: left;
+      width: 150px;
+      height: 150px;
+      margin: 0 20px;
+      border-radius: 5px 30px 5px;
 
     }
-
-    .data-icon {
-
+    p {
+      font-size: 18px;
+      font-weight: 500;
+      text-align: justify;
     }
+  }
 
-    .data-content{
-
+  .whatIDoContent {
+    margin: 35px;
+    h2 {
+      font-family: monospace;
+      font-size: 45px;
+      font-weight: bold;
+      font-style: italic;
     }
+    .data-box {
+      text-align: center;
 
-    &.education{
+      .iconHeader {
+        // background-color: #00BFFF;
+        border-radius: 50%;
+        /* border: solid 3px #F4F4F4; */
+        border: solid 3px #c0B283;
+        background-color: white;
+        width: 175px;
+        height: 175px;
+        padding: 20px;
+        margin: 0 auto 20px auto;
+        .data-title {
+          padding-top: 20px;
+          font-family: monospace;
+          color: #373737;
+          font-size: 25px;
+          font-weight: bold;
+        }
+        .data-icon {
+          color: #DCD0C0;
+          font-size: 40px;
+          margin: 7px 0 12px 0;
+        }
+      }
 
+      .data-content {
+        font-family: monospace;
+
+      }
+
+      &.education {
+
+      }
+
+      &.ux {
+
+      }
+
+      &.code {
+
+      }
     }
-
-    &.ux {
-
-    }
-
-    &.code {
-
+    @media (min-width: $screen-xs) and (max-width: $screen-md) {
+      .data-content {
+        padding-bottom: 30px !important;
+      }
     }
   }
 }
+
+
 
