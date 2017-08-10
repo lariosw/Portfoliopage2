@@ -1,0 +1,8 @@
+{
+  "mailer": {
+    "fromEmail": "mailer.whitney.larios@gmail.com",
+    "toEmail": "whitney.larios@gmail.com",
+    "subject": "Contact message from whitney.larios portfolio page",
+    "password": "Mailer&23"
+  }
+}

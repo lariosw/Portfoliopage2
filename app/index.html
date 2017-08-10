@@ -230,23 +230,26 @@
 
       <h3>Leave a message with specifics on what you type of project you need assistance with. I will get back to you shortly!</h3>
 
-        <ul>
-          <li><a href="mailto:whitney.larios@gmail.com" target="_top"><i class="fa fa-envelope" aria-hidden="true"></i> whitney.larios@gmail.com</a></li>
-          <li><a href="tel:12066188972"><i class="fa fa-phone-square" aria-hidden="true"></i> 206-618.8972</a></li>
-        </ul>
+        <div class="email-phone">
+          <span><a href="mailto:whitney.larios@gmail.com" target="_top"><i class="fa fa-envelope" aria-hidden="true"></i> whitney.larios@gmail.com</a></span>
+          <span><a href="tel:12066188972"><i class="fa fa-phone-square" aria-hidden="true"></i> 206-618.8972</a></span>
+        </div>
 
 
         <div class="contact-form">
-          <form action="/action_page.php">
+          <form id="contactPageForm" action="/action_page.php" autocomplete="off">
             <div class="row">
-            <div class="inputWrapper  col-xs-12 col-sm-12 col-md-6"><input type="text" id="fname" class="inputFields" name="firstname" placeholder="First Name"></div>
-            <div class="inputWrapper  col-xs-12 col-sm-12 col-md-6"><input type="text" id="lname"  class="inputFields" name="lastname" placeholder="Last Name"></div>
-            <div class="inputWrapper  col-xs-12 col-sm-12 col-md-6"><input type="text" id="email"  class="inputFields" name="email" placeholder="Email Address"></div>
-            <div class="inputWrapper  col-xs-12 col-sm-12 col-md-6"><input type="text" id="phone"  class="inputFields" name="phone" placeholder="Phone Number"></div>
+              <div class="inputWrapper  col-xs-12 col-sm-12 col-md-6"><input type="text" id="fname" class="inputFields" name="fnamess" placeholder="First Name" required></div>
+              <div class="inputWrapper  col-xs-12 col-sm-12 col-md-6"><input type="text" id="lname"  class="inputFields" name="lname" placeholder="Last Name" required></div>
+              <div class="inputWrapper  col-xs-12 col-sm-12 col-md-6"><input type="email" id="email"  class="inputFields" name="email" placeholder="Email Address" required></div>
+              <div class="inputWrapper  col-xs-12 col-sm-12 col-md-6"><input type="text" id="phone"  class="inputFields" name="phone" placeholder="Phone Number" required></div>
 
-            <textarea id="subject" name="subject" placeholder="Tell me more.." style="height:200px"></textarea>
-
-            <input class="submit" type="submit" value="Submit">
+              <textarea id="subject" name="message" placeholder="Tell me more.." style="height:200px" required></textarea>
+              <input class="submit" type="submit" value="Submit">
+              <div class="send-result">
+                <h3 class="success-msg" style="display:none">Thank you! I will contact you shortly</h3>
+                <h3 class="failed-msg" style="display:none">Failed to send. Please try again or contact me directly.</h3>
+              </div>
             </div>
           </form>
         </div>

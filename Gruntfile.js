@@ -2,6 +2,8 @@
 // generator-webapp 1.1.2
 'use strict';
 
+var apiRouter = require('./server/server');
+
 // # Globbing
 // for performance reasons we're only matching one level down:
 // 'test/spec/{,*/}*.js'
@@ -23,7 +25,9 @@ module.exports = function (grunt) {
   // Configurable paths
   var config = {
     app: 'app',
-    dist: 'dist'
+    dist: 'dist/www',
+    server: 'server',
+    serverDist: 'dist/server',
   };
 
   // Define the configuration for all the tasks
@@ -99,6 +103,7 @@ module.exports = function (grunt) {
           port: 9000,
           server: {
             baseDir: ['.tmp', config.app],
+            middleware: [apiRouter],
             routes: {
               '/bower_components': './bower_components'
             }
@@ -135,6 +140,7 @@ module.exports = function (grunt) {
           src: [
             '.tmp',
             '<%= config.dist %>/*',
+            '<%= config.serverDist %>/**',
             '!<%= config.dist %>/.git*'
           ]
         }]
@@ -373,6 +379,18 @@ module.exports = function (grunt) {
           cwd: '.',
           src: 'bower_components/bootstrap-sass/assets/fonts/bootstrap/*',
           dest: '<%= config.dist %>'
+        },{
+          expand: true,
+          dot: true,
+          cwd: '<%=config.server%>',
+          dest: '<%=config.serverDist%>',
+          src:[
+            'node_modules/**',
+            'helpers/**',
+            'api.js',
+            'server.js',
+            'config.json'
+          ]
         }]
       }
     },
