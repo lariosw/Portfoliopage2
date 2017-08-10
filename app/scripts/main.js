@@ -37,6 +37,23 @@ var wlApp = {
   openInNewTab: function(url){
     var win = window.open(url, '_blank');
     win.focus();
+  },
+
+  setupContact: function(){
+    var $upArrow = $('.nav-up-btn');
+
+    $('#section-contact .contactLink').click(function(){
+      $upArrow.addClass('hidden');
+      $('#contactForm').slideDown("slow", function(){
+      });
+    });
+
+
+    $('#contactForm .close-icon').click(function(){
+      $('#contactForm').slideUp("slow", function(){
+        $upArrow.removeClass('hidden');
+      });
+    });
   }
 };
 
@@ -46,6 +63,8 @@ $(function(){
   wlApp.setupNavArrowManagement();
 
   wlApp.setupLandingTypedText();
+
+  wlApp.setupContact();
 
 });
 

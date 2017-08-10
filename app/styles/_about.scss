@@ -86,9 +86,44 @@
 
       }
     }
+
     @media (min-width: $screen-xs) and (max-width: $screen-md) {
       .data-content {
         padding-bottom: 30px !important;
+      }
+    }
+    @media (max-width: 768px) {
+      .data-content {
+        padding-bottom: 40px !important;
+      }
+      .data-title {
+        font-size: 15px !important;
+      }
+      .data-icon {
+        font-size: 20px !important;
+      }
+      .iconHeader {
+        width: 110px !important;
+        height: 110px !important;
+        padding: 10px !important;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .bio {
+      margin-bottom: 0 !important;
+      img {
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin: 0 auto !important;
+        float: none;
+      }
+      p {
+        clear: both;
+        font-size: 16px;
+        font-weight: 300;
+        text-align: center;
       }
     }
   }

@@ -6,8 +6,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
@@ -114,7 +114,7 @@
 
           <div class="workContainer row">
             <div class="workImage hankImage col-xs-12 col-md-8">
-              <img src="images/portfolioimages/hankimage1.png">
+              <a class="workLink2" href="http://lariosw.github.io/calendaraggregatorapp" target="_blank"><img src="images/portfolioimages/hankimage1.png"></a>
             </div>
 
             <div class="workContent col-xs-12 col-md-4">
@@ -134,7 +134,7 @@
 
         <div class="workContainer row">
             <div class="workImage codeLifeImage col-xs-12 col-md-8">
-                <img src="images/portfolioimages/codelifeimage1.png">
+              <a class="workLink2" href="http://lariosw.github.io/programmingsite" target="_blank"><img src="images/portfolioimages/codelifeimage1.png"></a>
           </div>
 
             <div class="workContent col-xs-12 col-md-4">
@@ -152,7 +152,7 @@
 
           <div class="workContainer row">
             <div class="workImage maplewoodImage col-xs-12 col-md-8">
-              <img src="images/portfolioimages/maplewoodimage1.png">
+              <a class="workLink2" href="http://www.maplewoodpreschool.org/" target="_blank"><img src="images/portfolioimages/maplewoodimage1.png"></a>
             </div>
             <div class="workContent col-xs-12 col-md-4">
               <h3>
@@ -170,7 +170,7 @@
 
           <div class="workContainer row">
               <div class="workImage procareImage col-xs-12 col-md-8">
-                <img src="images/portfolioimages/procarehomepage.png">
+                <a class="workLink2" href="" target="_blank"><img src="images/portfolioimages/procarehomepage.png"></a>
               </div>
 
               <div class="workContent col-xs-12 col-md-4">
@@ -200,7 +200,7 @@
         <div class="sub-footer">
           <h1>Let's work together! </h1>
           <h4>Contact me to connect or work on an upcoming project.</h4>
-          <a class="contactLink" href="mailto:whitney.larios@gmail.com" target="_blank">Contact Me</a>
+          <a class="contactLink"  target="_blank">Contact Me</a>
           <br>
           <i class="fa fa-handshake-o" aria-hidden="true"></i>
         </div>
@@ -222,7 +222,38 @@
 
     </div>
 
-    </body>
+    <div id="contactForm">
+      <a class="close-icon">X</a>
+
+      <div class="contactLogo"><img src="images/logo.png"></div>
+      <h2>Work with me on your next project</h2>
+
+      <h3>Leave a message with specifics on what you type of project you need assistance with. I will get back to you shortly!</h3>
+
+        <ul>
+          <li><a href="mailto:whitney.larios@gmail.com" target="_top"><i class="fa fa-envelope" aria-hidden="true"></i> whitney.larios@gmail.com</a></li>
+          <li><a href="tel:12066188972"><i class="fa fa-phone-square" aria-hidden="true"></i> 206-618.8972</a></li>
+        </ul>
+
+
+        <div class="contact-form">
+          <form action="/action_page.php">
+            <div class="row">
+            <div class="inputWrapper  col-xs-12 col-sm-12 col-md-6"><input type="text" id="fname" class="inputFields" name="firstname" placeholder="First Name"></div>
+            <div class="inputWrapper  col-xs-12 col-sm-12 col-md-6"><input type="text" id="lname"  class="inputFields" name="lastname" placeholder="Last Name"></div>
+            <div class="inputWrapper  col-xs-12 col-sm-12 col-md-6"><input type="text" id="email"  class="inputFields" name="email" placeholder="Email Address"></div>
+            <div class="inputWrapper  col-xs-12 col-sm-12 col-md-6"><input type="text" id="phone"  class="inputFields" name="phone" placeholder="Phone Number"></div>
+
+            <textarea id="subject" name="subject" placeholder="Tell me more.." style="height:200px"></textarea>
+
+            <input class="submit" type="submit" value="Submit">
+            </div>
+          </form>
+        </div>
+
+    </div>
+
+  </body>
 
 
    <!-- build:js(.) scripts/vendor.js -->

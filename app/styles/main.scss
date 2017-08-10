@@ -27,7 +27,6 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
   .sections-wrapper {
     position:relative;
-    // background:lightblue;
     width:80%;
     left:50%;
     margin-left: -40%;
@@ -69,4 +68,8 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
     margin: 0 auto;
     color: #F4F4F4;
   }
+}
+
+.hidden {
+  display: none;
 }

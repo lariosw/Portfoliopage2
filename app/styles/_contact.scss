@@ -36,4 +36,136 @@
   }
 }
 
+#contactForm {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #DCD0C0;
+  height: 100%;
+  display: none;
+  overflow: scroll;
+  h2 {
+      width: 483px;
+      margin:0 auto;
+    }
+  .contactLogo {
+    width: 82px;
+    margin: 75px auto;
+  }
+  h1 {
+    width: 200px;
+    font-weight: 800;
+    margin: 30px auto 10px auto;
+  }
+  ul {
+    width: 505px;
+    margin: 0 auto;
+    li {
+      font-weight: 100;
+      font-size: 20px;
+      list-style-type: none;
+      display: inline-block;
+      margin: 10px;
+
+    }
+  }
+  h3 {
+    width: 620px;
+    font-weight: 200;
+    text-align: center;
+    margin: 20px auto 40px auto;
+  }
+
+  .close-icon {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 35px;
+    font-weight: 100;
+    color: #373737;
+  }
+
+  .close-icon:hover {
+    font-weight: 300 !important;
+    text-decoration: none;
+  }
+
+
+  .contact-form {
+    width: 80%;
+    margin-left:10%;
+    min-width: 300px;
+    max-width: 1100px;
+  }
+
+  input {
+    width: 100%;
+    color: white;
+    &.submit {
+      width: 120px;
+      font-weight: 300;
+    }
+  }
+
+  textarea {
+    color: white;
+  }
+
+  .fa {
+    color: #c0B283;
+  }
+
+  /* Style inputs with type="text", select elements and textareas */
+  input[type=text], select, textarea {
+    //width: 50%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #F4F4F4;
+    background-color: #373737;
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+
+
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color:  #c0B283;
+    padding: 12px 20px;
+    border: none;
+    //border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color:#F4F4F4;
+    color: #373737;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    padding: 20px;
+  }
+
+  @media (max-width: $screen-sm){
+    .contactLogo {
+      margin: 50px auto 40px auto;
+    }
+    h2, h3, ul {
+      text-align: center;
+      width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}
+
 

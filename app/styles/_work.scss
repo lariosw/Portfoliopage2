@@ -9,7 +9,6 @@
   .projects-header-sub {
     font-weight: 100;
     font-size: 20px;
-    width: 700px;
     margin: 0 auto;
     text-align: center;
   }
@@ -19,53 +18,82 @@
   }
 
   .workContainer {
+    background-color: #F4F4F4;
+    margin: 35px;
     .workImage{
       overflow: hidden;
       padding: 35px;
       img {
         width:100%;
         border: 4px solid #E3E1E3;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+      }
+      img:hover {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
       }
     }
 
     .workContent{
       padding: 20px;
-      background-color: #F4F4F4;
       height: 350px;
       margin: 30px 0px;
       color: #373737;
-      a{
-        font-size: 15px;
-        width: 100px;
-        margin: 10px !important;
-        color: #F4F4F4;
-        background-color:  #373737;
-        padding: 5px;
-      }
-      .technologies {
-        color: #C0B283;
-        text-align: center;
-        font-weight: 300;
-        margin-top: 20px;
-      }
-      h3 {
-        margin-top: 5px;
-        text-decoration: italic;
-      }
-      p {
-        font-size: 15px;
-        text-align: justify;
-        font-weight: 400;
-        margin-top: 20px;
-      }
-      img {
-        width: 20%;
-        background-color: white;
-      }
+    }
+
+    .workLink {
+      font-size: 15px;
+      width: 100px;
+      margin: 10px !important;
+      color: #F4F4F4;
+      background-color:  #373737;
+      padding: 5px;
+    }
+    .technologies {
+      color: #C0B283;
+      text-align: center;
+      font-weight: 300;
+      margin-top: 20px;
+    }
+    h3 {
+      margin-top: 5px;
+      font-style: italic;
+    }
+    p {
+      font-size: 15px;
+      text-align: justify;
+      font-weight: 400;
+      margin-top: 20px;
+    }
+    img {
+      width: 20%;
+      background-color: white;
     }
   }
+}
 
-  @media (min-width: $screen-xs) and (max-width: $screen-md) {
+/* phone & tablet */
+@media (max-width: $screen-sm){
+
+}
+
+/* phone only */
+@media (max-width: $screen-xs){
+
+  .workContainer{
+    .workImage{
+      padding-bottom: 0 !important;
+    }
+    .workContent {
+      margin-top: 0 !important;
+      text-align: center;
+      margin-bottom: 0 !important;
+    }
+  }
+}
+
+/* tablet only */
+@media (min-width: $screen-xs) and (max-width: $screen-md) {
     .workContainer{
       background-color: #F4F4F4;
       margin: 20px 0px;
@@ -87,6 +115,7 @@
     h1 {
       font-size: 30px;
     }
-
-  }
+    .wl-logo {
+    margin-left: -75px !important;
+    }
 }

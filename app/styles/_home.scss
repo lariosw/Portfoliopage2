@@ -12,8 +12,8 @@
 
   .wl-logo{
     position: absolute;
-    top: -60px;
-    left: 50%;
+    top: 28px;
+    left: 56%;
     margin-left: -115px;
   }
 
@@ -44,13 +44,19 @@
   }
   .nav-up-btn{
     .fa-angle-double-up {
-      color: #FFCC00;
+      color: #F4967C;
       font-size: 40px !important;
       text-shadow: .5px 2px black;
       position: fixed;
       top: 0px;
       left: 10px;
       z-index:222222;
+    }
+  }
+
+  @media (max-width: $screen-sm) {
+    .wl-logo {
+      margin-left: -75px !important;
     }
   }
 }
