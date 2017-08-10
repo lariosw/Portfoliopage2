@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
 
 app.post('/api/contact', function(req, res){
-  api.sendContactEmail(req.body.fname + req.body.lname, req.body.email, req.body.phone, req.body.message).done(function(emailResponse){
+  api.sendContactEmail(req.body.fname + ' ' + req.body.lname, req.body.email, req.body.phone, req.body.message).done(function(emailResponse){
         handleSuccess(res, emailResponse);
     }, function(err){
         handleFailure(res, err, 'Failed to send email');
@@ -36,15 +36,6 @@ function handleFailure(res, err, data){
 }
 
 module.exports = app;
-
-api.sendContactEmail("Marivn", "hello", '1234', 'hello').done(function(emailResponse){
-  console.log('response: ' + emailResponse);
-  // handleSuccess(res, emailResponse);
-}, function(err){
-  console.log('error: ' + err);
-  //handleFailure(res, err, 'Failed to send email');
-});
-return;
 
 //Setup listener if correct argument passed and called through terminal (not require)
 if (require.main === module) {
