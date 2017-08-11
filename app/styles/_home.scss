@@ -9,7 +9,9 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
+  min-height: 100%;
+  background-attachment: scroll;
+  
   .wl-logo{
     position: absolute;
     top: 28px;
