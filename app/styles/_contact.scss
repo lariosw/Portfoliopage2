@@ -173,6 +173,10 @@
       padding-left: 10px;
       padding-right: 10px;
     }
+
+    input[type=text], input[type=email], select {
+      font-size: 16px;
+    }
   }
 }
 
