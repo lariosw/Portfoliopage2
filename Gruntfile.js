@@ -427,6 +427,29 @@ module.exports = function (grunt) {
         'imagemin',
         'svgmin'
       ]
+    },
+
+    'sftp-deploy': {
+      www: {
+        auth: {
+          host: '192.169.170.115',
+          port: 22,
+          authKey: 'key1'
+        },
+        src: '<%= config.dist %>',
+        dest: '/var/www/whitneylarios.com/www',
+        exclusions: []
+      },
+      server: {
+        auth: {
+          host: '192.169.170.115',
+          port: 22,
+          authKey: 'key1'
+        },
+        src: '<%= config.serverDist %>',
+        dest: '/var/www/whitneylarios.com/server',
+        exclusions: []
+      }
     }
   });
 

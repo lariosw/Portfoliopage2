@@ -40,7 +40,7 @@ module.exports = app;
 //Setup listener if correct argument passed and called through terminal (not require)
 if (require.main === module) {
   if (process && process.argv && process.argv.length > 2) {
-    var apiPort = 3005;
+    var apiPort = 3010;
     appMode = process.argv[2].toString().replace('--', '').toUpperCase();
     if (!(appMode == 'DEV' || appMode == "DIST" || appMode == "PROD")) {
       console.log("Server listener not started. Argument DEV, DIST and PROD must be passed.");
