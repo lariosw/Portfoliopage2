@@ -81,6 +81,11 @@
 @media (max-width: $screen-xs){
 
   .workContainer{
+    margin: 0 auto 15px auto !important;
+
+    &.codeLifeContainer{
+    padding-bottom: 15px !important;
+    }
     .workImage{
       padding-bottom: 0 !important;
     }
@@ -100,6 +105,9 @@
     }
      .workContent {
        height: 250px !important;
+       .codeLife {
+
+       }
      }
     .workImage {
       padding: 0!important;
