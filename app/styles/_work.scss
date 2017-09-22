@@ -69,6 +69,31 @@
       width: 20%;
       background-color: white;
     }
+    .procareImage {
+      position: relative;
+    }
+    .inProgressBanner {
+      position: absolute;
+      top: 35px;
+      right: 35px;
+      bottom: 35px;
+      left: 35px;
+      background-color: black;
+      opacity: 0.40;
+    }
+    .banner {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      font-size: 30px;
+      color: yellow;
+      text-shadow: 2px 2px darkgrey;
+
+      span {
+        margin-left: -50%;
+        display: inline-block;
+      }
+    }
   }
 }
 
@@ -84,7 +109,7 @@
     margin: 0 auto 15px auto !important;
 
     &.codeLifeContainer{
-    padding-bottom: 15px !important;
+      padding-bottom: 15px !important;
     }
     .workImage{
       padding-bottom: 0 !important;
@@ -95,35 +120,59 @@
       margin-bottom: 0 !important;
     }
   }
+  .inProgressBanner {
+    bottom: -15px !important;
+  }
+  .banner {
+    //left: 30% !important;
+    font-size: 20px !important;
+  }
 }
+
 
 /* tablet only */
 @media (min-width: $screen-xs) and (max-width: $screen-md) {
-    .workContainer{
-      background-color: #F4F4F4;
-      margin: 20px 0px;
-    }
-     .workContent {
-       height: 250px !important;
-       .codeLife {
+  .workContainer{
+    background-color: #F4F4F4;
+    margin: 20px 0px;
+  }
+  .inProgressBanner {
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+  }
+  .banner {
+    //left: 30% !important;
+    font-size: 25px !important;
+  }
+  .workContent {
+    height: 250px !important;
 
-       }
-     }
-    .workImage {
-      padding: 0!important;
-      width: 80%;
-      margin-top: 30px;
-      margin-left: 10%;
-      box-shadow: 5px 5px 2px #808080;
-    }
-    .projects-header-sub {
-      width: 400px;
-      font-size: 15px;
-    }
-    h1 {
-      font-size: 30px;
-    }
-    .wl-logo {
+  }
+  .workImage {
+    padding: 0!important;
+    width: 80%;
+    margin-top: 30px;
+    margin-left: 10%;
+    box-shadow: 5px 5px 2px #808080;
+  }
+  .projects-header-sub {
+    width: 400px;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .wl-logo {
     margin-left: -75px !important;
-    }
+  }
+}
+
+
+@media (max-width: $screen-sm){
+  .banner {
+    //left: 30% !important;
+    font-size: 18px !important;
+  }
 }
