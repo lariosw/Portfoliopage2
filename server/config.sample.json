@@ -3,6 +3,9 @@
 * into source control so must be filled in locally
 */
 {
+  "appName": "Whitneylarios.com",
+  "appMode": "PROD",
+  "apiPort": "3010",
   "mailer": {
     "fromEmail": "mailer.whitney.larios@gmail.com",
     "toEmail": "whitney.larios@gmail.com",
