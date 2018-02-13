@@ -4,7 +4,7 @@
 */
 {
   "appName": "Whitneylarios.com",
-  "appMode": "PROD",
+  "appMode": "DEV",
   "apiPort": "3010",
   "mailer": {
     "fromEmail": "mailer.whitney.larios@gmail.com",
