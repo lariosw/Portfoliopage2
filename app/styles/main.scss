@@ -54,14 +54,6 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
       }
     }
   }
-  /*
-  @media screen and (max-width: 480px) {
-
-    {
-
-    }
-  }
-*/
 
   .copywright {
     width: 160px;
@@ -73,3 +65,16 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 .hidden {
   display: none;
 }
+
+@media only screen and (max-width: 500px) {
+    .sections-wrapper {
+      position: static;
+      width: 100%;
+      left: 0;
+      margin-left: 0;
+    }
+    .sub-footer {
+     height: 370px !important;
+    }
+  }
+
