@@ -2,6 +2,13 @@
   background-color: #F4F4F4;
   padding: 20px;
   margin: 35px;
+  text-align: center;
+  i {
+    font-size: 40px;
+    color: #DCD0C0;
+    margin: 15px 0;
+  }
+
   .ux-image {
     img {
      height: 100px;
@@ -175,8 +182,10 @@
   }
   .sub-section {
     padding: 20px;
-    margin: 35px 0;
+    margin: 35px 0px;
+    text-align: center;
   }
+
 }
 
 /* phone only */
