@@ -103,6 +103,21 @@ var wlApp = {
       event.preventDefault();
     });
 
+  },
+
+  setupImagesModal: function(){
+    $('.sub-section.ux .examples .ux-image').click(function(){
+        var $modal = $('#imagesModal');
+        var $img = $(this).find('img');
+        var imgSrc = $img.attr('src');
+
+        //show modal
+        $modal.addClass('visible');
+        $modal.find('img').attr('src', imgSrc);
+    });
+    $('#imagesModal .fa-window-close').click(function(){
+      $('#imagesModal').removeClass('visible');
+    });
   }
 };
 
@@ -115,5 +130,6 @@ $(function(){
 
   wlApp.setupContactFunctionality();
 
+  wlApp.setupImagesModal();
 });
 
