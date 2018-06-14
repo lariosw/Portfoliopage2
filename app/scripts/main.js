@@ -25,7 +25,7 @@ var wlApp = {
 
     var $subText = $('.head-text .sub-tagline');
     var typed = new Typed('.head-text .typed-text', {
-      strings: ["a Web Developer,", "a UX Designer,", "a Web Content Manager,", "a creative being,", "Whitney Larios."],
+      strings: ["a Web Producer/Developer,", "a Designer,", "a Digital Marketing Guru,", "a creative being,", "Whitney Larios."],
       typeSpeed: 40,
       callback: function(){
 
