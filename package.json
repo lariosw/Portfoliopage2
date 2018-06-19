@@ -29,6 +29,7 @@
     "grunt-usemin": "^3.0.0",
     "grunt-wiredep": "^2.0.0",
     "jit-grunt": "^0.9.1",
+    "load-grunt-tasks": "^3.5.2",
     "time-grunt": "^1.1.0"
   },
   "engines": {
@@ -58,5 +59,8 @@
         2
       ]
     }
+  },
+  "dependencies": {
+    "ftp-deploy": "^1.2.2"
   }
 }
